@@ -1,0 +1,30 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-title>
+      MovieApi
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" mode="ios">
+    <ion-toolbar>
+      <ion-title size="large">MovieApi</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <app-movies [movies]="movies"></app-movies>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="12" >
+      <app-popular-list></app-popular-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
+
+

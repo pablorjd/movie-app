@@ -1,0 +1,25 @@
+<!-- Default -->
+<!-- <ion-modal [isOpen]="true">
+  <ng-template>
+    <ion-content></ion-content>
+
+
+  </ng-template>
+</ion-modal> -->
+
+
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>{{ movie.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <app-movie  [movie]="movie"></app-movie>
+
+  <h6>Personajes</h6>
+  <app-characters></app-characters>
+</ion-content>
